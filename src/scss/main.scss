@@ -4,6 +4,14 @@
 
 @import "_variables";
 
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   background: #393c46;
   color: rgb(207, 209, 190);
@@ -12,4 +20,42 @@ body {
   justify-content: center;
   min-height: 100vh;
   font-family: 'Open Sans';
+}
+
+.editor{
+  width: 100%;
+  max-width: 736px;
+  &__header{
+    font-size: 44px;
+    margin: 0 0 40px;
+  }
+}
+
+.form {
+  &__buttons{
+    margin: 16px 0 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__textarea{
+    width: 100%;
+    min-height: 240px;
+    border: 1px solid #A1A4B1;
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 14px;
+  }
+}
+
+.button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #121232;
+  background: #FAFAFC;
+  border: 1px solid #121232;
+  border-radius: 4px;
+  padding: 8px 16px;
+  
+
 }
