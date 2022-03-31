@@ -1,8 +1,15 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](https://konradbujas.github.io/simple-editor/og.png)
 
-# WTF Webpack Starter Kit 
+# Simple Editor
 
-Simple toolkit for your static websites development.
+Simple editor - Enter your thoughts and save or load what you wrote before ;)
+
+## Tools & Tricks
+
+- WTF Webpack Starterkit
+- HTML + CSS + JS
+- Local storage save & load
+- JS: DOM manipulations
 
 ## How to use it?
 
@@ -16,3 +23,4 @@ Click on `Use this template` button to generate a new repository based on this s
 
 `npm run publish` - runs build process and publish the page using `gh-pages` branch
 
+s
