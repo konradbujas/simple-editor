@@ -1,4 +1,4 @@
-import loader from 'sass-loader';
+
 import '../scss/main.scss';
 
 // uncomment the lines below to enable PWA
