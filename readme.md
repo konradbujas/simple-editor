@@ -11,9 +11,19 @@ Simple editor - Enter your thoughts and save or load what you wrote before ;)
 - Local storage save & load
 - JS: DOM manipulations
 
-## How to use it?
+## How to use ?
 
---
+1. Install Node.js
+ 
+2. Clone repository to your computer
+ 
+3. Go to the project directory in console and type `npm install`
+
+4. Next type `npm run start` in console in project directory
+
+5. Open localhost http://localhost:8080/ on your browser
+
+6. Enjoy!
 
 ## Available scripts
 
