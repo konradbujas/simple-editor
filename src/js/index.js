@@ -30,3 +30,5 @@ load.addEventListener('click', (e) => {
     e.preventDefault();
     textarea.value = localStorage.getItem('entry');
 });
+
+console.log("dziala!");

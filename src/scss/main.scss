@@ -1,6 +1,6 @@
 @import "~normalize.css";
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 
 @import "_variables";
 
@@ -8,44 +8,33 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
+
+h1 {
+  display: flex;
+  position: absolute;
+}
+
+
 
 body {
   background: #393c46;
   color: rgb(207, 209, 190);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   min-height: 100vh;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   padding: 16px;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
 
-.editor{
-  width: 100%;
-  max-width: 736px;
-  &__header{
-    font-size: 44px;
-    margin: 0 0 40px;
-  }
-}
-
-.form {
-  &__buttons{
-    margin: 16px 0 0;
-    display: flex;
-    justify-content: flex-end;
-  }
-  &__textarea{
-    width: 100%;
-    min-height: 240px;
-    border: 1px solid #A1A4B1;
-    border-radius: 12px;
-    padding: 16px;
-    font-size: 14px;
-  }
+  
 }
 
 .button {
@@ -53,15 +42,65 @@ body {
   font-size: 14px;
   line-height: 16px;
   color: #121232;
-  background: #FAFAFC;
+  background: #fafafc;
   border: 1px solid #121232;
   border-radius: 4px;
   padding: 8px 16px;
   &--save {
     background: #121232;
     border: 1px solid #121232;
-    color: #FAFAFC;
+    color: #fafafc;
     margin-left: 30px;
+  }
+}
+
+.dark {
+  max-width: 736px;
+  
+  // position: relative;
+  // left: 600px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  &__button {
+    background: #121232;
+  border: 1px solid #121232;
+  color: #fafafc;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  
+  
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin: 16px 0 24px;
   }
 
 }
+
+.editor {
+  width: 100%;
+  max-width: 736px;
+  &__header {
+    font-size: 44px;
+    margin: 0 0 40px;
+  }
+}
+
+.form {
+  &__buttons {
+    margin: 16px 0 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__textarea {
+    width: 100%;
+    min-height: 240px;
+    border: 1px solid #a1a4b1;
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 14px;
+  }
+}
+
+

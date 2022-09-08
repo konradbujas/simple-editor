@@ -145,8 +145,17 @@
     />
   </head>
   <body>
+    <header>
+      <h1 class="editor__header">Simple Editor</h1>
+      <div class="dark">
+        <button aria-label="Dark mode toggl" class="dark__button">
+        <span>dark mode</span>
+        <div class="icon"></div>
+        </button>
+      </div>
+    </header>
     <main class="editor">
-        <h1 class="editor__header">Simple Editor</h1>
+      
         <form class="form">
           <textarea class="form__textarea textarea--js" aria-label="Enter your thoughts..." placeholder="Enter your thoughts..."></textarea>
           <div class="form__buttons">
@@ -155,5 +164,6 @@
           </div>
         </form>
     </main>
+    
   </body>
 </html>
